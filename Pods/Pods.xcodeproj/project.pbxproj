@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054F751FF03D6A5A35F3020C2F27A622 /* Pods-BreakingBadCharacterExplorerApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C038863BE80B68A80315AFB34B87D0 /* Pods-BreakingBadCharacterExplorerApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF778BEFC7721E16D5F02EF17376689 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CCC7811493EDA3CC9A4B099A34BEB68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		67EFE662C8C6C5F7A18268007F400BD9 /* Pods-BreakingBadCharacterExplorerAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2EF941E38AB0CF8CB83DC7B29718D8 /* Pods-BreakingBadCharacterExplorerAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */; };
+		A38B69B45DE19FDDC246AF90EC42ED4B /* Pods-BreakingBadCharacterExplorerAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 069C7A2E80DF700BD8BCE787C2FF9D23 /* Pods-BreakingBadCharacterExplorerAppTests-dummy.m */; };
+		AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1118FC4BF2349E61D5A97571B401A8C /* Reachability.swift */; };
+		ACA7FE59D23D8A14CE298F76BA002363 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		B2BF876188FA95AC31A09589AB6DF943 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC6C5032FC1D035170EC1FABEDD4504 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADB6663D53B80B353292F6E7CCF78BB /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C172CD299C18610E501AAB5D815572AE /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-dummy.m */; };
+		C1A1C9D6374A8100C122D1CEB9916CE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */; };
+		E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58B756C1B6F83080EB05354E04317B /* ReachabilitySwift-dummy.m */; };
+		FC37C9FC208B0709A8D44AE375B05321 /* Pods-BreakingBadCharacterExplorerApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF447C04197236EB48C8A11015FB5B4D /* Pods-BreakingBadCharacterExplorerApp-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05ACA134BBB6B8AF1723BAABB5AE937E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03A6825210BB5B9D6A2103CA84E7B33;
+			remoteInfo = "Pods-BreakingBadCharacterExplorerApp";
+		};
+		74B332388C24FAF0AB3EFA83C7D7B359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		DF1A047D5B162BF46D549ADBFE1B48CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		069AA35E898B4C00466D4271509A6343 /* ReachabilitySwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReachabilitySwift-Info.plist"; sourceTree = "<group>"; };
+		069C7A2E80DF700BD8BCE787C2FF9D23 /* Pods-BreakingBadCharacterExplorerAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreakingBadCharacterExplorerAppTests-dummy.m"; sourceTree = "<group>"; };
+		073ACA4DDA4280FAB4C52373FD97AFDF /* ReachabilitySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.release.xcconfig; sourceTree = "<group>"; };
+		08C038863BE80B68A80315AFB34B87D0 /* Pods-BreakingBadCharacterExplorerApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreakingBadCharacterExplorerApp-umbrella.h"; sourceTree = "<group>"; };
+		09ED49CB51B4ED53B9C35C98C056C397 /* Pods-BreakingBadCharacterExplorerApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreakingBadCharacterExplorerApp-Info.plist"; sourceTree = "<group>"; };
+		0E73D8FE0DBF54A8BB6D8F55F152E235 /* Pods_BreakingBadCharacterExplorerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BreakingBadCharacterExplorerAppTests.framework; path = "Pods-BreakingBadCharacterExplorerAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		111E7D1A26EBAAA4D5D580A89BAA7C92 /* Pods-BreakingBadCharacterExplorerApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreakingBadCharacterExplorerApp.modulemap"; sourceTree = "<group>"; };
+		19A3B8B6C11D36B7A2FEDCA14B1F4B43 /* Pods_BreakingBadCharacterExplorerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BreakingBadCharacterExplorerApp.framework; path = "Pods-BreakingBadCharacterExplorerApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8E74083B6C2128AAE61C7B4A7CA29D /* Pods-BreakingBadCharacterExplorerAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreakingBadCharacterExplorerAppTests-Info.plist"; sourceTree = "<group>"; };
+		1DD43788B023359072890DFC701E4047 /* Pods-BreakingBadCharacterExplorerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreakingBadCharacterExplorerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		21B03CA622E690725A6626C088E1D09F /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7D70F68ABC6F443961E7E4D7FAA81D /* Pods-BreakingBadCharacterExplorerAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreakingBadCharacterExplorerAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51639B02A39DE3F5888C9FCBEE1100C0 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5196BB866D3583072230D50FF4092BD5 /* ReachabilitySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.debug.xcconfig; sourceTree = "<group>"; };
+		60450924EE55CE760FF3ED8A6BA5D3B1 /* Pods-BreakingBadCharacterExplorerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreakingBadCharacterExplorerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		78CFF2643E8BF003E45165F388270538 /* Pods-BreakingBadCharacterExplorerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreakingBadCharacterExplorerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF778BEFC7721E16D5F02EF17376689 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		857AEC11CD839A3399E3B28FCF726DED /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		8963E12987DC02B1646A6A9035AEDB68 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		8A1211E7D895D9ECEF7191FE369CD7B4 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A2EF941E38AB0CF8CB83DC7B29718D8 /* Pods-BreakingBadCharacterExplorerAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreakingBadCharacterExplorerAppTests-umbrella.h"; sourceTree = "<group>"; };
+		94F243DF5E778E53DC90A4932D50D98C /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-Info.plist"; sourceTree = "<group>"; };
+		955CAF7C72C15DD7CA10E83F6CC426F3 /* Pods-BreakingBadCharacterExplorerAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreakingBadCharacterExplorerAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		97BA72588499A68622597BD0958434C7 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E95D55A3D450AA5E19436D985A14843 /* Pods_BreakingBadCharacterExplorerApp_BreakingBadCharacterExplorerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BreakingBadCharacterExplorerApp_BreakingBadCharacterExplorerAppUITests.framework; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC6C5032FC1D035170EC1FABEDD4504 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		B0D7B5556C8389FC0AF7C5FB53FDECA2 /* Pods-BreakingBadCharacterExplorerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreakingBadCharacterExplorerApp.release.xcconfig"; sourceTree = "<group>"; };
+		C172CD299C18610E501AAB5D815572AE /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-dummy.m"; sourceTree = "<group>"; };
+		CF447C04197236EB48C8A11015FB5B4D /* Pods-BreakingBadCharacterExplorerApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreakingBadCharacterExplorerApp-dummy.m"; sourceTree = "<group>"; };
+		D1118FC4BF2349E61D5A97571B401A8C /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9D5C204994A6387F4DE2534297132BE /* Pods-BreakingBadCharacterExplorerApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreakingBadCharacterExplorerApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE8528F810973A3604FF30C58824E17A /* Pods-BreakingBadCharacterExplorerApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreakingBadCharacterExplorerApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3F9125E48BF71AFF734333B9F4D662E /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF58B756C1B6F83080EB05354E04317B /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		F4A365D152DB10FF4696D4D49205DA98 /* Pods-BreakingBadCharacterExplorerAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreakingBadCharacterExplorerAppTests.modulemap"; sourceTree = "<group>"; };
+		F545814A34BD55326B36C9BBBFBC17F1 /* Pods-BreakingBadCharacterExplorerApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreakingBadCharacterExplorerApp-frameworks.sh"; sourceTree = "<group>"; };
+		F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		FD11CD7DF153F10210972AC317BDF493 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.modulemap"; sourceTree = "<group>"; };
+		FEA6B42DA3BBE3E8AF61613000E447DD /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12960787ED05206724DB94B5DED225F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCC7811493EDA3CC9A4B099A34BEB68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A37A51219ED31062DE51A3E139BF37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */,
+				33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */,
+				E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CBA41062CFAF3EC2DD21DBE0AFA9A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA7FE59D23D8A14CE298F76BA002363 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B660F91B318E93B31C44C46C10140769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A1C9D6374A8100C122D1CEB9916CE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D0AA215FB49F5F6E11902E9E88FDB66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6A028CF5F5E4DA047C6F7FCE7A7C354 /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */,
+				D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */,
+				F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6EB9A325377A7CC1D788D9BCD8CF1538 /* Pods-BreakingBadCharacterExplorerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4A365D152DB10FF4696D4D49205DA98 /* Pods-BreakingBadCharacterExplorerAppTests.modulemap */,
+				3C7D70F68ABC6F443961E7E4D7FAA81D /* Pods-BreakingBadCharacterExplorerAppTests-acknowledgements.markdown */,
+				955CAF7C72C15DD7CA10E83F6CC426F3 /* Pods-BreakingBadCharacterExplorerAppTests-acknowledgements.plist */,
+				069C7A2E80DF700BD8BCE787C2FF9D23 /* Pods-BreakingBadCharacterExplorerAppTests-dummy.m */,
+				1B8E74083B6C2128AAE61C7B4A7CA29D /* Pods-BreakingBadCharacterExplorerAppTests-Info.plist */,
+				8A2EF941E38AB0CF8CB83DC7B29718D8 /* Pods-BreakingBadCharacterExplorerAppTests-umbrella.h */,
+				1DD43788B023359072890DFC701E4047 /* Pods-BreakingBadCharacterExplorerAppTests.debug.xcconfig */,
+				60450924EE55CE760FF3ED8A6BA5D3B1 /* Pods-BreakingBadCharacterExplorerAppTests.release.xcconfig */,
+			);
+			name = "Pods-BreakingBadCharacterExplorerAppTests";
+			path = "Target Support Files/Pods-BreakingBadCharacterExplorerAppTests";
+			sourceTree = "<group>";
+		};
+		7EA2352CB1A6DF17A65530B0C31D1B95 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				857AEC11CD839A3399E3B28FCF726DED /* ReachabilitySwift.modulemap */,
+				EF58B756C1B6F83080EB05354E04317B /* ReachabilitySwift-dummy.m */,
+				069AA35E898B4C00466D4271509A6343 /* ReachabilitySwift-Info.plist */,
+				8963E12987DC02B1646A6A9035AEDB68 /* ReachabilitySwift-prefix.pch */,
+				7FF778BEFC7721E16D5F02EF17376689 /* ReachabilitySwift-umbrella.h */,
+				5196BB866D3583072230D50FF4092BD5 /* ReachabilitySwift.debug.xcconfig */,
+				073ACA4DDA4280FAB4C52373FD97AFDF /* ReachabilitySwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		8E130C15777638784ECE62B086538802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19A3B8B6C11D36B7A2FEDCA14B1F4B43 /* Pods_BreakingBadCharacterExplorerApp.framework */,
+				9E95D55A3D450AA5E19436D985A14843 /* Pods_BreakingBadCharacterExplorerApp_BreakingBadCharacterExplorerAppUITests.framework */,
+				0E73D8FE0DBF54A8BB6D8F55F152E235 /* Pods_BreakingBadCharacterExplorerAppTests.framework */,
+				21B03CA622E690725A6626C088E1D09F /* Reachability.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4E5AA9274BA3F0F9515FFEF5EB8520 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD11CD7DF153F10210972AC317BDF493 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.modulemap */,
+				97BA72588499A68622597BD0958434C7 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-acknowledgements.markdown */,
+				8A1211E7D895D9ECEF7191FE369CD7B4 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-acknowledgements.plist */,
+				C172CD299C18610E501AAB5D815572AE /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-dummy.m */,
+				51639B02A39DE3F5888C9FCBEE1100C0 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-frameworks.sh */,
+				94F243DF5E778E53DC90A4932D50D98C /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-Info.plist */,
+				ABC6C5032FC1D035170EC1FABEDD4504 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-umbrella.h */,
+				E3F9125E48BF71AFF734333B9F4D662E /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.debug.xcconfig */,
+				FEA6B42DA3BBE3E8AF61613000E447DD /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.release.xcconfig */,
+			);
+			name = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests";
+			path = "Target Support Files/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests";
+			sourceTree = "<group>";
+		};
+		AF4EE20037799815B8E2D4C613EE4231 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7CE56A751FC32213A284A9A39ECCC4C /* Pods-BreakingBadCharacterExplorerApp */,
+				AD4E5AA9274BA3F0F9515FFEF5EB8520 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests */,
+				6EB9A325377A7CC1D788D9BCD8CF1538 /* Pods-BreakingBadCharacterExplorerAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				5D0AA215FB49F5F6E11902E9E88FDB66 /* Pods */,
+				8E130C15777638784ECE62B086538802 /* Products */,
+				AF4EE20037799815B8E2D4C613EE4231 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E6A028CF5F5E4DA047C6F7FCE7A7C354 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				D1118FC4BF2349E61D5A97571B401A8C /* Reachability.swift */,
+				7EA2352CB1A6DF17A65530B0C31D1B95 /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		F7CE56A751FC32213A284A9A39ECCC4C /* Pods-BreakingBadCharacterExplorerApp */ = {
+			isa = PBXGroup;
+			children = (
+				111E7D1A26EBAAA4D5D580A89BAA7C92 /* Pods-BreakingBadCharacterExplorerApp.modulemap */,
+				D9D5C204994A6387F4DE2534297132BE /* Pods-BreakingBadCharacterExplorerApp-acknowledgements.markdown */,
+				DE8528F810973A3604FF30C58824E17A /* Pods-BreakingBadCharacterExplorerApp-acknowledgements.plist */,
+				CF447C04197236EB48C8A11015FB5B4D /* Pods-BreakingBadCharacterExplorerApp-dummy.m */,
+				F545814A34BD55326B36C9BBBFBC17F1 /* Pods-BreakingBadCharacterExplorerApp-frameworks.sh */,
+				09ED49CB51B4ED53B9C35C98C056C397 /* Pods-BreakingBadCharacterExplorerApp-Info.plist */,
+				08C038863BE80B68A80315AFB34B87D0 /* Pods-BreakingBadCharacterExplorerApp-umbrella.h */,
+				78CFF2643E8BF003E45165F388270538 /* Pods-BreakingBadCharacterExplorerApp.debug.xcconfig */,
+				B0D7B5556C8389FC0AF7C5FB53FDECA2 /* Pods-BreakingBadCharacterExplorerApp.release.xcconfig */,
+			);
+			name = "Pods-BreakingBadCharacterExplorerApp";
+			path = "Target Support Files/Pods-BreakingBadCharacterExplorerApp";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09F7B7D04C454C16C0015640CF269F7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64AEEE5169DC7CC725DC4D362B4682BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2BF876188FA95AC31A09589AB6DF943 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C730D55F2EC134EDB63EA0CC82465B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054F751FF03D6A5A35F3020C2F27A622 /* Pods-BreakingBadCharacterExplorerApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DF6B23C9E2F085FE998B5CC04B4331 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EFE662C8C6C5F7A18268007F400BD9 /* Pods-BreakingBadCharacterExplorerAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				09F7B7D04C454C16C0015640CF269F7E /* Headers */,
+				9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */,
+				92A37A51219ED31062DE51A3E139BF37 /* Frameworks */,
+				1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 21B03CA622E690725A6626C088E1D09F /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BB7601599589314E8B2C74615FE61AD /* Pods-BreakingBadCharacterExplorerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A867471D2CACA2FCB99850C315554885 /* Build configuration list for PBXNativeTarget "Pods-BreakingBadCharacterExplorerAppTests" */;
+			buildPhases = (
+				C5DF6B23C9E2F085FE998B5CC04B4331 /* Headers */,
+				0E16AE23EBDCAB88F4D982C166008A84 /* Sources */,
+				12960787ED05206724DB94B5DED225F7 /* Frameworks */,
+				D5443E678AE404D6B3EE74D883E3CB99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F46F3A9CDE0AAD0089B3FBBAEACDFA9 /* PBXTargetDependency */,
+			);
+			name = "Pods-BreakingBadCharacterExplorerAppTests";
+			productName = "Pods-BreakingBadCharacterExplorerAppTests";
+			productReference = 0E73D8FE0DBF54A8BB6D8F55F152E235 /* Pods_BreakingBadCharacterExplorerAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A03A6825210BB5B9D6A2103CA84E7B33 /* Pods-BreakingBadCharacterExplorerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C4023AEE6ED4802BCBE9847A8815CC /* Build configuration list for PBXNativeTarget "Pods-BreakingBadCharacterExplorerApp" */;
+			buildPhases = (
+				8C730D55F2EC134EDB63EA0CC82465B4 /* Headers */,
+				067452A732801182C69E982345C235D4 /* Sources */,
+				B660F91B318E93B31C44C46C10140769 /* Frameworks */,
+				57929C43EF1EA532BF11E5DF750E4AB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A5928A497CCD243226690197BF9CA6F /* PBXTargetDependency */,
+			);
+			name = "Pods-BreakingBadCharacterExplorerApp";
+			productName = "Pods-BreakingBadCharacterExplorerApp";
+			productReference = 19A3B8B6C11D36B7A2FEDCA14B1F4B43 /* Pods_BreakingBadCharacterExplorerApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3BAA39EB4D7A0FC95E60DFA1D28A0B9 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E8E8F7DB3E49AF03646A51F78EA7E7 /* Build configuration list for PBXNativeTarget "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests" */;
+			buildPhases = (
+				64AEEE5169DC7CC725DC4D362B4682BD /* Headers */,
+				A0AED33FE9A50E67AC4496BC0C84F5DB /* Sources */,
+				96CBA41062CFAF3EC2DD21DBE0AFA9A5 /* Frameworks */,
+				C4F9928175E74980EBC8DD4689DA2B1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8EA47988CEA6A4E15E71CCD538B30C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests";
+			productName = "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests";
+			productReference = 9E95D55A3D450AA5E19436D985A14843 /* Pods_BreakingBadCharacterExplorerApp_BreakingBadCharacterExplorerAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8E130C15777638784ECE62B086538802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A03A6825210BB5B9D6A2103CA84E7B33 /* Pods-BreakingBadCharacterExplorerApp */,
+				C3BAA39EB4D7A0FC95E60DFA1D28A0B9 /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests */,
+				7BB7601599589314E8B2C74615FE61AD /* Pods-BreakingBadCharacterExplorerAppTests */,
+				0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57929C43EF1EA532BF11E5DF750E4AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F9928175E74980EBC8DD4689DA2B1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5443E678AE404D6B3EE74D883E3CB99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		067452A732801182C69E982345C235D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC37C9FC208B0709A8D44AE375B05321 /* Pods-BreakingBadCharacterExplorerApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E16AE23EBDCAB88F4D982C166008A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38B69B45DE19FDDC246AF90EC42ED4B /* Pods-BreakingBadCharacterExplorerAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */,
+				E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0AED33FE9A50E67AC4496BC0C84F5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADB6663D53B80B353292F6E7CCF78BB /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A5928A497CCD243226690197BF9CA6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = DF1A047D5B162BF46D549ADBFE1B48CA /* PBXContainerItemProxy */;
+		};
+		5F46F3A9CDE0AAD0089B3FBBAEACDFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BreakingBadCharacterExplorerApp";
+			target = A03A6825210BB5B9D6A2103CA84E7B33 /* Pods-BreakingBadCharacterExplorerApp */;
+			targetProxy = 05ACA134BBB6B8AF1723BAABB5AE937E /* PBXContainerItemProxy */;
+		};
+		A8EA47988CEA6A4E15E71CCD538B30C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = 74B332388C24FAF0AB3EFA83C7D7B359 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5908717A11D6AF5FD4366D681DA8DE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073ACA4DDA4280FAB4C52373FD97AFDF /* ReachabilitySwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F105DE130E7C58EB2BB2D3D56345DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		81FEBF679AF746E7D5296BAE8187DFE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D7B5556C8389FC0AF7C5FB53FDECA2 /* Pods-BreakingBadCharacterExplorerApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp/Pods-BreakingBadCharacterExplorerApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp/Pods-BreakingBadCharacterExplorerApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84713C018580BC2BA9067352B6730D2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD43788B023359072890DFC701E4047 /* Pods-BreakingBadCharacterExplorerAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerAppTests/Pods-BreakingBadCharacterExplorerAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerAppTests/Pods-BreakingBadCharacterExplorerAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB9B38139C5627437C662CCBEFC5D805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B6BF1CBF48BB13B6276546EDF67A0683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60450924EE55CE760FF3ED8A6BA5D3B1 /* Pods-BreakingBadCharacterExplorerAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerAppTests/Pods-BreakingBadCharacterExplorerAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerAppTests/Pods-BreakingBadCharacterExplorerAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7B77D4B863E883083E320094B3F5ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5196BB866D3583072230D50FF4092BD5 /* ReachabilitySwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D891B9DCEC7B8E9829D1E4FF758078D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CFF2643E8BF003E45165F388270538 /* Pods-BreakingBadCharacterExplorerApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp/Pods-BreakingBadCharacterExplorerApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp/Pods-BreakingBadCharacterExplorerApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA8E77F04334A71F29CB84C408F3DA25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEA6B42DA3BBE3E8AF61613000E447DD /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCE5FEE6F18B00C60D30AACF73D86FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F9125E48BF71AFF734333B9F4D662E /* Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests/Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F105DE130E7C58EB2BB2D3D56345DEF /* Debug */,
+				AB9B38139C5627437C662CCBEFC5D805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C4023AEE6ED4802BCBE9847A8815CC /* Build configuration list for PBXNativeTarget "Pods-BreakingBadCharacterExplorerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D891B9DCEC7B8E9829D1E4FF758078D3 /* Debug */,
+				81FEBF679AF746E7D5296BAE8187DFE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E8E8F7DB3E49AF03646A51F78EA7E7 /* Build configuration list for PBXNativeTarget "Pods-BreakingBadCharacterExplorerApp-BreakingBadCharacterExplorerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE5FEE6F18B00C60D30AACF73D86FE7 /* Debug */,
+				DA8E77F04334A71F29CB84C408F3DA25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A867471D2CACA2FCB99850C315554885 /* Build configuration list for PBXNativeTarget "Pods-BreakingBadCharacterExplorerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84713C018580BC2BA9067352B6730D2F /* Debug */,
+				B6BF1CBF48BB13B6276546EDF67A0683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B77D4B863E883083E320094B3F5ECA /* Debug */,
+				5908717A11D6AF5FD4366D681DA8DE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
