@@ -1,8 +1,8 @@
 //
-//  BreakingBadCharacterExplorerApp.swift
+//  BreakingBadCharacterExplorerAppTests.swift
 //  BreakingBadCharacterExplorerAppTests
 //
-//  Created by Muhammad Luqman on 11/29/20.
+//  Created by Muhammad Luqman on 11/30/20.
 //
 
 import XCTest
@@ -10,24 +10,66 @@ import XCTest
 
 class BreakingBadCharacterExplorerAppTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testValidateBreakingBad() {
+        
+        let expct = expectation(description: "Returns all fields to create valid image url")
+        
+        SearchService().request() { (result) in
+            
+            switch result {
+            case .Success(let results):
+                
+                guard let resultCount = results?.count else {
+                    XCTFail("No Breaking Bad returned")
+                    return
+                }
+                
+                if resultCount > 0 {
+                    XCTAssert(true, "Returned Breaking Bad")
+                    
+                    // Pick first breaking bad record
+                    
+                    let breakingBad = results?.first
+                    
+                    if breakingBad?.img == nil {
+                        XCTFail("No image id returned")
+                    }
+                    
+                    if breakingBad?.name == nil {
+                        XCTFail("No name id returned")
+                    }
+                    
+                    if breakingBad?.nickname == nil {
+                        XCTFail("No nick name id returned")
+                    }
+                    
+                    if breakingBad?.status == nil {
+                        XCTFail("No status id returned")
+                    }
+                    
+                    if let appearance = breakingBad?.appearance{
+                        if appearance.count == 0{
+                            XCTFail("No appearance id returned")
+                        }
+                    }else{
+                        
+                        XCTFail("No appearance id returned")
+                    }
+                    
+                    XCTAssert(true, "Success")
+                    expct.fulfill()
+                }
+            case .Failure(let message):
+                XCTFail(message)
+            case .Error(let error):
+                XCTFail(error)
+            }
+        }
+        
+        waitForExpectations(timeout: 10) { (error) in
+            if let error = error {
+                XCTFail("Error: \(error.localizedDescription)")
+            }
         }
     }
-
 }
