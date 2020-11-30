@@ -1,5 +1,5 @@
 //
-//  SearchBusinessCellViewModel.swift
+//  BreakingBadCharactersCellViewModel.swift
 //  BreakingBadCharacterExplorerApp
 //
 //  Created by Muhammad Luqman on 11/29/20.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SearchBusinessCellViewModel {
+class BreakingBadCharactersCellViewModel {
     
     let char_id: Int?
     let name: String?

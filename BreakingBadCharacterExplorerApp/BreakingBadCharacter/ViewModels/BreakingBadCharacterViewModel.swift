@@ -9,14 +9,36 @@ import UIKit
 
 class BreakingBadCharacterViewModel: NSObject {
     
-    public var dataSource = [SearchBusinessCellViewModel]()
+    public var data = [BreakingBadCharactersCellViewModel]()
+    public var dataSource = [BreakingBadCharactersCellViewModel]()
     
     var showAlert: ((String) -> Void)?
     var dataUpdated: (() -> Void)?
     
-    func search(completion:@escaping () -> Void) {
+    func fetchData(completion:@escaping () -> Void) {
         
         fetchResults(completion: completion)
+    }
+    
+    func filterResult(searchText: String){
+        if searchText.count > 0 ,let integerToSearch = Int(searchText){
+            dataSource = data.filter({ (obj) -> Bool in
+                if let appearence = obj.appearance  {
+                    return appearence.contains(integerToSearch) ? true:false
+                }
+                else{
+                    return false
+                }
+            })
+        }
+        else if searchText.count > 0 {
+            dataSource=data.filter { ($0.name?.lowercased().contains(searchText.lowercased()) ?? false) }
+            
+        }
+        else{
+            dataSource = data
+        }
+        self.dataUpdated?()
     }
     
     private func fetchResults(completion:@escaping () -> Void) {
@@ -28,9 +50,10 @@ class BreakingBadCharacterViewModel: NSObject {
                 switch result {
                 case .Success(let results):
                     if let result = results {
-                        self.dataSource = result.map{
-                            SearchBusinessCellViewModel(result: $0)
+                        self.data = result.map{
+                            BreakingBadCharactersCellViewModel(result: $0)
                         }
+                        self.dataSource = self.data
                         self.dataUpdated?()
                     }
                     completion()

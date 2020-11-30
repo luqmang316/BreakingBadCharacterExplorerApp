@@ -7,16 +7,14 @@
 
 import UIKit
 
-class SearchResultCell: UITableViewCell {
-
+class BreakingBadCharactersCell: UITableViewCell {
+    
     // MARK: - Outlets
     @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var background: UIView!
     @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var typeLbl: UILabel!
-    @IBOutlet weak var synopsisLbl: UILabel!
     
-    public var viewModel: SearchBusinessCellViewModel!{
+    public var viewModel: BreakingBadCharactersCellViewModel!{
         
         didSet{
             
@@ -28,11 +26,8 @@ class SearchResultCell: UITableViewCell {
     private func setData(){
         
         imageIcon.image = UIImage(named: "placeholder")
-        
         imageIcon.downloadImage(viewModel.img ?? "")
         titleLbl.text = viewModel.name
-//        typeLbl.text = viewModel.type
-//        synopsisLbl.text = viewModel.synopsis
         
     }
     
@@ -40,8 +35,9 @@ class SearchResultCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
+        
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }

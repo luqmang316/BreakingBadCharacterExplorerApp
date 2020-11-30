@@ -16,8 +16,11 @@ class BreakingBadCharacterVC: UIViewController {
     private var searchBarController: UISearchController!
     private var viewModel = BreakingBadCharacterViewModel()
     
+    private var selectedCellData: BreakingBadCharactersCellViewModel?
+    
     private var isFirstTimeActive = true
-    let identifierCell = "SearchResultCell"
+    let identifierCell = "BreakingBadCharactersCell"
+    let segueIdentifier = "DetailVC"
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -25,18 +28,20 @@ class BreakingBadCharacterVC: UIViewController {
         
         configureUI()
         viewModelClosures()
+        
+        // Api call.
+        viewModel.fetchData() {
+            print("search completed.")
+        }
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
-    
+        
         if isFirstTimeActive {
             searchBarController.isActive = false
             isFirstTimeActive = false
-        }
-        
-        viewModel.search() {
-            print("search completed.")
         }
     }
     
@@ -52,6 +57,24 @@ class BreakingBadCharacterVC: UIViewController {
         }
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    // MARK: - prepare Segue
+    // perform Segue for detail screen
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if(segue.identifier == segueIdentifier){
+            
+            guard let detailVC = segue.destination as? DetailVC else {
+                return
+            }
+            
+            //Passes data for detail view controller
+            if let data = selectedCellData{
+                let vm = DetailViewModel(data: data)
+                detailVC.detailViewModel = vm
+            }
+        }
     }
 }
 
@@ -103,49 +126,34 @@ extension BreakingBadCharacterVC: UISearchControllerDelegate, UISearchBarDelegat
         searchBarController.delegate = self
         searchBarController.searchBar.delegate = self
         searchBarController.obscuresBackgroundDuringPresentation = false
+        searchBarController.searchBar.showsCancelButton = false
+        
         
     }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterResult(searchText: searchText)
+    }
     
-//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-//
-//        guard let text = searchBar.text, text.count > 1 else {
-//            return
-//        }
-//
-//        self.tableView.reloadData()
-//
-//        viewModel.search() {
-//            print("search completed.")
-//        }
-//
-//        searchBarController.searchBar.resignFirstResponder()
-//    }
 }
 
 
-//MARK:- UItableViewDataSource
-extension BreakingBadCharacterVC: UITableViewDataSource {
-    
+//MARK:- UItableViewDataSource, UITableViewDelegate
+extension BreakingBadCharacterVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return self.viewModel.dataSource.count
-        
     }
-    
     
     //Show cell for row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: identifierCell, for: indexPath) as? SearchResultCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: identifierCell, for: indexPath) as? BreakingBadCharactersCell else {
             
             return UITableViewCell()
         }
         
         cell.viewModel = self.viewModel.dataSource[indexPath.row]
-        
         return cell
-        
     }
     
     //Set row height
@@ -153,6 +161,15 @@ extension BreakingBadCharacterVC: UITableViewDataSource {
         
         return UITableView.automaticDimension
     }
+    
+    // Called when tap on cell.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.selectedCellData = self.viewModel.dataSource[indexPath.row]
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
+        
+    }
+    
 }
 
 
