@@ -1,6 +1,6 @@
 # BreakingBadCharacterExplorerApp
 
-- Fidelity Healthcare App implementation using Swift 5.1 and Xcode 12.2
+- Breaking Bad Character ExplorerApp implementation using Swift 5.1 and Xcode 12.2
 - Fetch the data using https://breakingbadapi.com/api/characters API and displays in table View.
 - Filter the character by name
 - Filter the characters by season appearance
