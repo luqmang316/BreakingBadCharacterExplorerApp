@@ -9,3 +9,8 @@
 - Implementation of Auto-Layout for UI
 - Cache images
 - The application uses MVVM architecture.
+- Used 3rd party libraries ReachabilitySwift.
+- Unit Testing
+
+# Demo Link:
+https://drive.google.com/file/d/1JI3YUQqOL-_O0WAG6EAXoocDpVfF6wlP/view?usp=sharing
