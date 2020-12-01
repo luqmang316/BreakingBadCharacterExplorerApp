@@ -119,6 +119,7 @@ extension BreakingBadCharacterVC {
 //MARK:- UISearchBarDelegate
 extension BreakingBadCharacterVC: UISearchControllerDelegate, UISearchBarDelegate {
     
+    //Create UISearch Bar
     private func createSearchBar() {
         
         searchBarController = UISearchController(searchResultsController: nil)
@@ -126,12 +127,32 @@ extension BreakingBadCharacterVC: UISearchControllerDelegate, UISearchBarDelegat
         searchBarController.delegate = self
         searchBarController.searchBar.delegate = self
         searchBarController.obscuresBackgroundDuringPresentation = false
-        searchBarController.searchBar.showsCancelButton = false
-        
+        searchBarController.searchBar.returnKeyType = .done
         
     }
+    
+    //Called when text Did Change
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        searchBar.showsCancelButton = true
         viewModel.filterResult(searchText: searchText)
+        
+    }
+    
+    //Called when tap search Bar Cancel Button Clicked
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
+        if searchBar.text?.count == 0 {
+            searchBar.showsCancelButton = false
+            viewModel.filterResult(searchText: "")
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
+        
+        searchBar.showsCancelButton = false
+        searchBar.resignFirstResponder()
+        
     }
     
 }
